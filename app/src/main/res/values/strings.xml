@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hardware</string>
+
+
+    <string name="ok">OK</string>
+    <string name="about">About…</string>
+    <string name="num_touches">Touches detected: %s</string>
+    <string name="str_about">Test utility for multi–touch screens in Android.\n\nCopyright © Dmitry Brant, 2013–2016</string>
+
+
+    <string name="title_activity_second_activiy">Interstitial</string>
+    <string name="msg_welcome">Welcome to Admob. Click on the below button to launch the Interstitial ad.</string>
+    <string name="btn_fullscreen_ad">Show Fullscreen Ad</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-1959892644957700/4406237157</string>
+    <string name="interstitial_full_screen">ca-app-pub-1959892644957700/3881644476</string>
+
+
+</resources>
+
+

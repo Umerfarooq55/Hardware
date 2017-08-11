@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_cloure">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        tools:context="com.greentech.quran.hardware.Wifistatus"
+        android:background="@color/background_cloure">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Front camera"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/text_coloure"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back camera"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/text_coloure"/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/cameramain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/text_coloure"
+            android:background="@color/colorPrimary"
+            android:text="check your cmera "
+            android:textSize="15sp"
+            android:layout_marginTop="200dp"/>
+    </LinearLayout>
+</ScrollView>

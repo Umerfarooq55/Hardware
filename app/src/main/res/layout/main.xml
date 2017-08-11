@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_cloure"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="50dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginLeft="10dp">
+    <TextView
+        android:id="@+id/tlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude "
+        android:layout_marginTop="8dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/Button_coloure"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="@color/text_coloure"
+        android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:text="Longitude "
+            android:textAllCaps="true"
+            android:textColor="@color/Button_coloure"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/lag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/longitude"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginLeft="107dp"
+            android:text="0"
+            android:textColor="@color/text_coloure"
+            android:textSize="15dp" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShowLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/colorPrimary"
+        android:text="Your current location" />
+</LinearLayout>
