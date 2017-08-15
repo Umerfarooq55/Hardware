@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F44336</color>
-    <color name="colorPrimaryDark">#790000</color>
+    <color name="colorPrimary">#5D5A58</color>
+    <color name="colorPrimaryDark">#4C4A48</color>
     <color name="colorAccent">#F44336</color>
-    <color name="Button_coloure">#F44336</color>
+    <color name="Button_coloure">#4C4A48</color>
 
-    <color name="text_coloure">#ffffff</color>
+    <color name="text_coloure">#e4e4e4</color>
     <color name="background_cloure">#161414</color>
+
+    
+    <color name="colorPrimaryLight">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDivider">#2FE897</color>
+    <color name="colorBorder">#a7a4a4</color>
+    <color name="colorExtra">#fffac1</color>
+
+
+    <color name="Linear_one">#00B7C3</color>
+    <color name="Linear_two">#0099BC</color>
+
+    <color name="test_button">#2E9528</color>
+    <color name="vector_colour">#2980B9</color>
 </resources>

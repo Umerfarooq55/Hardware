@@ -21,7 +21,7 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:textColor="@color/Button_coloure"
+        android:textColor="@color/text_coloure"
         android:layout_marginLeft="25dp"
         />
 
@@ -50,7 +50,7 @@
             android:layout_below="@+id/linearLayout"
             android:text="Longitude "
             android:textAllCaps="true"
-            android:textColor="@color/Button_coloure"
+            android:textColor="@color/text_coloure"
             android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginLeft="25dp"/>

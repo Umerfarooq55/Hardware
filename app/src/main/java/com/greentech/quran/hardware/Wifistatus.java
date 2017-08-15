@@ -17,8 +17,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.net.NetworkInterface;
@@ -130,22 +128,22 @@ String mbps = "Mbps";
         tserver.setText(sserver);
 
 
-        mInterstitialAd = new InterstitialAd(this);
-
-        // set the ad unit ID
-        mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
-
-        AdRequest adRequest = new AdRequest.Builder()
-                .build();
-
-        // Load ads into Interstitial Ads
-        mInterstitialAd.loadAd(adRequest);
-
-        mInterstitialAd.setAdListener(new AdListener() {
-            public void onAdLoaded() {
-                showInterstitial();
-            }
-        });
+//        mInterstitialAd = new InterstitialAd(this);
+//
+//        // set the ad unit ID
+//        mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
+//
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .build();
+//
+//        // Load ads into Interstitial Ads
+//        mInterstitialAd.loadAd(adRequest);
+//
+//        mInterstitialAd.setAdListener(new AdListener() {
+//            public void onAdLoaded() {
+//                showInterstitial();
+//            }
+//        });
     }
 
     private void showInterstitial() {

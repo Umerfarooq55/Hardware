@@ -2,6 +2,7 @@ package com.greentech.quran.hardware;
 
 import android.app.AlertDialog;
 import android.app.Service;
+import android.app.backup.RestoreObserver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -144,7 +145,7 @@ public class GPSTracker extends Service implements LocationListener {
 	public boolean canGetLocation() {
 		return this.canGetLocation;
 	}
-	
+
 	/**
 	 * Function to show settings alert dialog
 	 * On pressing Settings button will lauch Settings Options
