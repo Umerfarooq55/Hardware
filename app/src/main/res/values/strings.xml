@@ -26,6 +26,7 @@
     <string name="search_fragment">Search Fragment</string>
     <string name="cart_fragment">Cart Fragment</string>
     <string name="hot_deals_fragment">Hot Deals Fragment</string>
+    <string name="title_activity_flashlight">flashlight</string>
 
 
 </resources>

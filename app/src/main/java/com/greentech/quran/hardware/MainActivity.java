@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
-        LinearLayout telephony = (LinearLayout) findViewById(R.id.layout_telephony);
+        LinearLayout telephony = (LinearLayout) findViewById(R.id.layout_telephony_one);
 
         telephony.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

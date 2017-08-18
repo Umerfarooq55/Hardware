@@ -106,7 +106,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layout_telephony"
+            android:id="@+id/layout_telephony_one"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@color/background_cloure">

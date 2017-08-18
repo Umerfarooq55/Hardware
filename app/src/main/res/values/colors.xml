@@ -17,8 +17,11 @@
     <color name="colorExtra">#fffac1</color>
 
 
-    <color name="Linear_one">#00B7C3</color>
-    <color name="Linear_two">#0099BC</color>
+    <color name="Linear_one">#2980B9
+
+    </color>
+    <color name="Linear_two">#2E9528
+    </color>
 
     <color name="test_button">#2E9528</color>
     <color name="vector_colour">#2980B9</color>

@@ -1,482 +1,579 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:context="com.greentech.quran.hardware.Autotest"
     android:layout_height="match_parent">
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/text_coloure"
-    android:orientation="vertical"
-    tools:context="com.greentech.quran.hardware.Autotest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+  >
+        <TextView
+            android:id="@+id/test_in_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testing in Progress"
+            android:textColor="@color/test_button"
+            android:layout_marginLeft="50dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/auto_start"
-        android:layout_width="270dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/test_button"
-        android:text="Auto start"
-        android:layout_gravity="center"
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-        android:textColor="@color/text_coloure" />
+        android:orientation="vertical"
+        tools:context="com.greentech.quran.hardware.Autotest">
+
+        <Button
+            android:id="@+id/auto_start"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/test_button"
+            android:text="Auto start"
+
+            android:textColor="@color/text_coloure" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lneartesting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testing Complete"
+            android:textColor="@color/test_button"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_check_circle_black_24dp" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp">
+
+        <com.github.jlmd.animatedcircleloadingview.AnimatedCircleLoadingView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circle_loading_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            app:animCircleLoadingView_mainColor="@color/colorPrimaryDark"
+            app:animCircleLoadingView_secondaryColor="@color/colorPrimary"
+            app:animCircleLoadingView_textColor="@color/colorPrimary" />
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="74dp"
         android:layout_marginTop="20dp"
         android:text=""
-        android:textColor="@color/colorBorder"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:id="@+id/datetime"
+        android:textColor="#000000"
+        android:textSize="16dp"
+         />
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_bluetooth_blue_24dp" />
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Bluetooth"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_bluetooth_blue_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Bluetooth is a wireless technologly"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bluetooth"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Bluetooth"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btest"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/btest"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_network_wifi_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Wifi"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_network_wifi_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                 android:layout_marginTop="1dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="wifi"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Wifi"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="wifi"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/wifi_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/wifi_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp"
-            />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_settings_cell_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+             android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Telephony"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_settings_cell_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Telephony"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Telephony"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Telephony"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/telephony_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/telephony_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_location_on_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+             android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="GPS"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_location_on_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="gps"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="GPS"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="gps"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gps_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/gps_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_battery_charging_full_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Battery"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_battery_charging_full_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Battery"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Battery"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Battery"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/attery_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/attery_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_touch_app_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Multi Touch"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_touch_app_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Multi Touch"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Multi Touch"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Multi Touch"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/multitouch_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/multitouch_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_camera_front_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Front Camera"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_camera_front_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Battery"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Front Camera"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Battery"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/front_camera_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/front_camera_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_camera_alt_black_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Back Camera"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_camera_alt_black_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Back Camera"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Back Camera"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Back Camera"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/back_camera_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/back_camera_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/text_coloure">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ic_fingerprint_blue_24dp" />
-
         <LinearLayout
-            android:layout_width="220dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/text_coloure">
 
-
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Sersors"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_fingerprint_blue_24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:text="sensors"
-                android:textSize="15dp" />
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sersors"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="sensors"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/sensors_test"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+android:layout_marginLeft="7dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_black_24dp" />
 
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/sensors_test"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_check_black_24dp" />
-
-
+    </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+
 </ScrollView>
