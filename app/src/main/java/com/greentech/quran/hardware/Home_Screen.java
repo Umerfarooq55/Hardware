@@ -63,11 +63,36 @@ public class Home_Screen extends AppCompatActivity {
 
             }
         });
+        LinearLayout scedule = (LinearLayout) findViewById (R.id.scdule);
+        scedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        LinearLayout quick = (LinearLayout) findViewById (R.id.about);
+        quick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Home_Screen.this, QuickActivity.class);
+                startActivity(i);
+
+            }
+        });
     }
     public void onBackPressed() {
         moveTaskToBack(true);
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }

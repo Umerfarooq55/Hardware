@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_cloure">
+    android:background="@color/colorBlack">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/text_coloure"
         android:orientation="vertical"
+        android:clickable="true"
 
         tools:context="com.greentech.quran.hardware.Autotest">
 
@@ -17,21 +18,22 @@
         <LinearLayout
             android:id="@+id/layout_bluetooth"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_bluetooth_black_24dp" />
+                android:src="@drawable/ic_bluetooth_blue_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-
+                android:background="@drawable/ripple"
 
                 android:orientation="vertical">
 
@@ -41,8 +43,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Bluetooth"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -50,8 +52,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="Bluetooth is a wireless technologly"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -62,19 +64,20 @@
         <LinearLayout
             android:id="@+id/layout_wifi"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_network_wifi_red_24dp" />
+                android:src="@drawable/ic_network_wifi_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
-
+                android:layout_width="match_parent"
+                android:background="@drawable/ripple"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
 
@@ -87,8 +90,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Wifi"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -96,8 +99,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="wifi"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -108,19 +111,21 @@
         <LinearLayout
             android:id="@+id/layout_telephony_one"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_settings_cell_red_24dp" />
+                android:src="@drawable/ic_settings_cell_black_24dp" />
 
             <LinearLayout
                 android:id="@+id/layout_telephony"
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/ripple"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
 
@@ -133,8 +138,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Telephony"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,8 +147,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="Telephony"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -154,21 +159,22 @@
         <LinearLayout
             android:id="@+id/layout_gps"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_location_on_red_24dp" />
+                android:src="@drawable/ic_location_on_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-
+                android:background="@drawable/ripple"
 
                 android:orientation="vertical">
 
@@ -179,8 +185,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="GPS"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -188,8 +194,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="gps"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -200,20 +206,23 @@
         <LinearLayout
             android:id="@+id/layout_battery"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_battery_charging_full_red_24dp" />
+                android:src="@drawable/ic_battery_charging_full_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
+
+                android:background="@drawable/ripple"
 
 
                 android:orientation="vertical">
@@ -224,8 +233,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Battery"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -233,8 +242,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="Battery"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -245,21 +254,23 @@
         <LinearLayout
             android:id="@+id/layout_multitouch"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_touch_app_red_24dp" />
+                android:src="@drawable/ic_touch_app_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-
+                android:background="@drawable/ripple"
 
                 android:orientation="vertical">
 
@@ -269,8 +280,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Multi Touch"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -278,8 +289,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="Multi Touch"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -290,22 +301,23 @@
         <LinearLayout
             android:id="@+id/layout_cpu"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/ic_memory_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-
-
+android:layout_marginTop="8dp"
+                android:background="@drawable/ripple"
                 android:orientation="vertical">
 
                 <TextView
@@ -314,8 +326,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="CPU"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -324,7 +336,7 @@
                     android:layout_marginTop="0dp"
                     android:text="CPU"
                     android:textColor="@color/colorWhite"
-                    android:textSize="15dp" />
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -335,21 +347,22 @@
         <LinearLayout
             android:id="@+id/layout_myapplications"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/ic_android_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-
+                android:background="@drawable/ripple"
 
                 android:orientation="vertical">
 
@@ -359,8 +372,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="My Applications"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -368,8 +381,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="My Applications"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -380,21 +393,22 @@
         <LinearLayout
             android:id="@+id/layout_system"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/ic_laptop_windows_black_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-
+                android:background="@drawable/ripple"
 
                 android:orientation="vertical">
 
@@ -404,9 +418,9 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="System Information"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
 
-                    android:textSize="20dp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -414,8 +428,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="System Information"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -426,20 +440,22 @@
         <LinearLayout
             android:id="@+id/layout_sensors"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/background_cloure">
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="50dp"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ic_fingerprint_black_24dp" />
+                android:src="@drawable/ic_fingerprint_blue_24dp" />
 
             <LinearLayout
-                android:layout_width="220dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
+                android:background="@drawable/ripple"
 
 
                 android:orientation="vertical">
@@ -450,9 +466,9 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Sersors"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
 
-                    android:textSize="20dp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -460,8 +476,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="sensors"
-                    android:textColor="@android:color/white"
-                    android:textSize="15dp" />
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>

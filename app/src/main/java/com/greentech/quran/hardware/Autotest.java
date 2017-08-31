@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -33,12 +34,49 @@ public class Autotest extends AppCompatActivity {
     String Date;
     Camera cam;
     TextView DisplayDateTime;
-    ImageView bluetooth, wifi, backCamera, FrontCamera, telephont, multitouch, sensors, batery;
+    ImageView bluetooth, wifi, backCamera, FrontCamera, telephont, multitouch, sensors, batery , gps_test;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autotest);
+
+        bluetooth = (ImageView) findViewById(R.id.btest);
+        wifi = (ImageView) findViewById(R.id.wifi_test);
+        backCamera = (ImageView) findViewById(R.id.back_camera_test);
+        FrontCamera = (ImageView) findViewById(R.id.front_camera_test);
+        telephont = (ImageView) findViewById(R.id.telephony_test);
+        multitouch = (ImageView) findViewById(R.id.multitouch_test);
+        sensors = (ImageView) findViewById(R.id.sensors_test);
+        batery = (ImageView) findViewById(R.id.attery_test);
+        gps_test = (ImageView) findViewById(R.id.gps_test);
+        bluetooth.setVisibility(View.INVISIBLE);
+        wifi.setVisibility(View.INVISIBLE);
+        backCamera.setVisibility(View.INVISIBLE);
+        FrontCamera.setVisibility(View.INVISIBLE);
+        telephont.setVisibility(View.INVISIBLE);
+        multitouch.setVisibility(View.INVISIBLE);
+        sensors.setVisibility(View.INVISIBLE);
+        batery.setVisibility(View.INVISIBLE);
+        gps_test.setVisibility(View.INVISIBLE);
+
+
+
+
+
+
+        bluetooth.setVisibility(View.INVISIBLE);
+        wifi.setVisibility(View.INVISIBLE);
+        backCamera.setVisibility(View.INVISIBLE);
+        FrontCamera.setVisibility(View.INVISIBLE);
+        telephont.setVisibility(View.INVISIBLE);
+        multitouch.setVisibility(View.INVISIBLE);
+        sensors.setVisibility(View.INVISIBLE);
+        batery.setVisibility(View.INVISIBLE);
+        gps_test.setVisibility(View.INVISIBLE);
+
+
 
         animatedCircleLoadingView = (AnimatedCircleLoadingView) findViewById(R.id.circle_loading_view);
         final Button autostart = (Button) findViewById(R.id.auto_start);
@@ -102,6 +140,15 @@ public class Autotest extends AppCompatActivity {
 
                 datetime.setVisibility(View.INVISIBLE);
 
+                bluetooth.setVisibility(View.VISIBLE);
+                wifi.setVisibility(View.VISIBLE);
+                backCamera.setVisibility(View.VISIBLE);
+                FrontCamera.setVisibility(View.VISIBLE);
+                telephont.setVisibility(View.VISIBLE);
+                multitouch.setVisibility(View.VISIBLE);
+                sensors.setVisibility(View.VISIBLE);
+                batery.setVisibility(View.VISIBLE);
+                gps_test.setVisibility(View.VISIBLE);
 
                 mediaPlayer.start();
                 ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(1000);
@@ -114,27 +161,7 @@ public class Autotest extends AppCompatActivity {
                 turnOnFlashLight();
 
 
-//                 bluetooth = (ImageView) findViewById(R.id.btest);
-//                bluetooth.setImageResource(R.drawable.ic_check_black_24dp);
-//
-//                wifi = (ImageView) findViewById(R.id.wifi_test);
-//                wifi.setImageResource(R.drawable.ic_check_black_24dp);
-//
-//                 batery= (ImageView) findViewById(R.id.battery_test);
-//                batery.setImageResource(R.drawable.ic_battery_charging_full_black_24dp);
-//
-//                multitouch = (ImageView) findViewById(R.id.multitouch_test);
-//                multitouch.setImageResource(R.drawable.multi_touch);
-//                bluetooth = (ImageView) findViewById(R.id.btest);
-//                bluetooth.setImageResource(R.drawable.blue_tooth);
-//                bluetooth = (ImageView) findViewById(R.id.btest);
-//                bluetooth.setImageResource(R.drawable.blue_tooth);
-//                bluetooth = (ImageView) findViewById(R.id.btest);
-//                bluetooth.setImageResource(R.drawable.blue_tooth);
-//                bluetooth = (ImageView) findViewById(R.id.btest);
-//                bluetooth.setImageResource(R.drawable.blue_tooth);
-//                bluetooth = (ImageView) findViewById(R.id.btest);
-//                bluetooth.setImageResource(R.drawable.blue_tooth);
+
 
             }
         });
@@ -204,6 +231,16 @@ public class Autotest extends AppCompatActivity {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }
