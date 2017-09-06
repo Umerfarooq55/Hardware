@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hardware</string>
+    <string name="app_name">Phone Hardware Doctor</string>
 
 
     <string name="ok">OK</string>
@@ -13,8 +13,8 @@
     <string name="btn_fullscreen_ad">Show Fullscreen Ad</string>
 
     <!-- AdMob ad unit IDs -->
-    <string name="banner_home_footer">ca-app-pub-1959892644957700/4406237157</string>
-    <string name="interstitial_full_screen">ca-app-pub-1959892644957700/3881644476</string>
+    <string name="banner_home_footer">ca-app-pub-1959892644957700/4580777767</string>
+    <string name="interstitial_full_screen">ca-app-pub-1959892644957700/7015369417</string>
 
 
     <string name="menu">Menu</string>
@@ -27,6 +27,8 @@
     <string name="cart_fragment">Cart Fragment</string>
     <string name="hot_deals_fragment">Hot Deals Fragment</string>
     <string name="title_activity_flashlight">flashlight</string>
+    <string name="title_activity_edit_dialogue">EditDialogue</string>
+    <string name="title_activity_about">About</string>
 
 
 </resources>

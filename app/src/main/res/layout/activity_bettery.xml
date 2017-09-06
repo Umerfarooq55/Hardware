@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:padding="16dp"
-    android:background="@color/background_cloure"
 
 
     tools:context=".bettery"
@@ -34,7 +34,7 @@
             android:text="Battery Info"
 
 
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorBlack"
             android:textSize="18sp" />
 
     </ScrollView>

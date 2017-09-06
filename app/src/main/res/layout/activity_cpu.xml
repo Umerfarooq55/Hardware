@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.greentech.quran.hardware.cpu"
+    android:background="@color/background_cloure"
     android:orientation="vertical"
-    android:background="@color/background_cloure">
+    tools:context="com.example.axcel.hardware.cpu">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -19,15 +19,15 @@
             android:orientation="vertical">
 
             <TextView
-                android:text="CPU Information Display Here"
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/textView"
-                android:textColor="@color/text_coloure"
-                android:textSize="15dp"
                 android:gravity="left"
+                android:text="CPU Information Display Here"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
                 />
 
         </LinearLayout>

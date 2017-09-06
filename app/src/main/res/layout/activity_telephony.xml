@@ -1,6 +1,4 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,9 +6,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:background="@color/background_cloure"
         android:orientation="vertical"
-        tools:context="com.greentech.quran.hardware.Wifistatus"
-        android:background="@color/background_cloure">
+        tools:context="com.example.axcel.hardware.Wifistatus">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,12 +18,12 @@
                 android:id="@+id/Toppname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Operater Name"
                 android:layout_marginTop="8dp"
+                android:text="Operater Name"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/oppname"
@@ -34,7 +32,7 @@
                 android:layout_marginLeft="160dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
         <LinearLayout
@@ -45,12 +43,12 @@
             android:id="@+id/Timei"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="IMEI"
             android:layout_marginTop="8dp"
+            android:text="IMEI"
             android:textAllCaps="true"
-            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
             android:textSize="15dp"
-            android:textColor="@color/Button_coloure"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/imei"
@@ -59,7 +57,7 @@
             android:layout_marginLeft="160dp"
             android:layout_marginTop="8dp"
             android:text="123456"
-            android:textColor="@color/text_coloure"
+            android:textColor="@color/colorBlack"
             android:textSize="15dp" />
     </LinearLayout>
         <LinearLayout
@@ -70,12 +68,12 @@
                 android:id="@+id/Toppcpde"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Operater Code"
                 android:layout_marginTop="8dp"
+                android:text="Operater Code"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/oppcode"
@@ -84,7 +82,7 @@
                 android:layout_marginLeft="160dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
         <LinearLayout
@@ -95,12 +93,12 @@
                 android:id="@+id/Tserial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Serial Number"
                 android:layout_marginTop="8dp"
+                android:text="Serial Number"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/serialnumber"
@@ -109,7 +107,7 @@
                 android:layout_marginLeft="45dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
 
@@ -121,12 +119,12 @@
                 android:id="@+id/Tsubid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Subscriber ID"
                 android:layout_marginTop="8dp"
+                android:text="Subscriber ID"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/subid"
@@ -135,7 +133,7 @@
                 android:layout_marginLeft="85dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
 
@@ -147,12 +145,12 @@
                 android:id="@+id/csubid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuntry ISO"
                 android:layout_marginTop="8dp"
+                android:text="Cuntry ISO"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/ciso"
@@ -161,7 +159,7 @@
                 android:layout_marginLeft="220dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
 
@@ -173,12 +171,12 @@
                 android:id="@+id/networktype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Network type"
                 android:layout_marginTop="8dp"
+                android:text="Network type"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/nnetworktype"
@@ -187,7 +185,7 @@
                 android:layout_marginLeft="190dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
         <LinearLayout
@@ -198,12 +196,12 @@
                 android:id="@+id/tromaing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Roaming"
                 android:layout_marginTop="8dp"
+                android:text="Roaming"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/roaming"
@@ -212,7 +210,7 @@
                 android:layout_marginLeft="220dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
 
@@ -224,12 +222,12 @@
                 android:id="@+id/tline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Line Number"
                 android:layout_marginTop="8dp"
+                android:text="Line Number"
                 android:textAllCaps="true"
-                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp"
-                android:textColor="@color/Button_coloure"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/line"
@@ -238,7 +236,7 @@
                 android:layout_marginLeft="220dp"
                 android:layout_marginTop="8dp"
                 android:text="123456"
-                android:textColor="@color/text_coloure"
+                android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
         </LinearLayout>
 

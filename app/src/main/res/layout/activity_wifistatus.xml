@@ -8,9 +8,9 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_cloure"
     android:orientation="vertical"
-    tools:context="com.greentech.quran.hardware.Wifistatus"
-    android:background="@color/background_cloure">
+    tools:context="com.example.axcel.hardware.Wifistatus">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,12 +20,12 @@
         android:id="@+id/Twifissid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SSID"
         android:layout_marginTop="8dp"
+        android:text="SSID"
         android:textAllCaps="true"
-        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
         android:textSize="15dp"
-        android:textColor="@color/Button_coloure"/>
+        android:textStyle="bold" />
 
         <TextView
             android:id="@+id/wifissid"
@@ -34,7 +34,7 @@
             android:layout_marginLeft="160dp"
             android:layout_marginTop="8dp"
             android:text="123456"
-            android:textColor="@color/text_coloure"
+            android:textColor="@color/colorBlack"
             android:textSize="15dp" />
     </LinearLayout>
     <LinearLayout
@@ -45,12 +45,12 @@
             android:id="@+id/Twifibssid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BSSID"
             android:layout_marginTop="8dp"
+            android:text="BSSID"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textColor="@color/Button_coloure"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/wifibssid"
@@ -60,7 +60,7 @@
             android:layout_marginTop="8dp"
             android:text="123456"
             android:textAllCaps="true"
-            android:textColor="@color/text_coloure"
+            android:textColor="@color/colorBlack"
             android:textSize="15dp" />
     </LinearLayout>
     <LinearLayout
@@ -71,21 +71,21 @@
             android:id="@+id/Tmac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MAC"
-            android:textColor="@color/Button_coloure"
             android:layout_marginTop="8dp"
+            android:text="MAC"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/macadress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="160dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
 
 
@@ -98,22 +98,22 @@
             android:id="@+id/Tipadress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Local IP Address"
             android:layout_marginTop="8dp"
+            android:text="Local IP Address"
             android:textAllCaps="true"
-            android:textColor="@color/Button_coloure"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/ipadress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
+            android:text="123456"
             android:textAllCaps="true"
-            android:layout_marginLeft="60dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -123,21 +123,21 @@
             android:id="@+id/Tlink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Link speed"
             android:layout_marginTop="8dp"
+            android:text="Link speed"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textColor="@color/Button_coloure"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/linkspeed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="110dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="110dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -147,21 +147,21 @@
             android:id="@+id/Tfrecuency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Frecuency"
             android:layout_marginTop="8dp"
-            android:textColor="@color/Button_coloure"
+            android:text="Frecuency"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/frecuency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="108dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="108dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
     </LinearLayout>
     <LinearLayout
@@ -172,21 +172,21 @@
         android:id="@+id/Tsignal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Signal (RSSI)"
         android:layout_marginTop="8dp"
+        android:text="Signal (RSSI)"
         android:textAllCaps="true"
-        android:textStyle="bold"
-        android:textColor="@color/Button_coloure"
-        android:textSize="15dp"/>
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/signal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="123456"
+        android:layout_marginLeft="98dp"
         android:layout_marginTop="8dp"
-        android:textSize="15dp"
-        android:textColor="@color/text_coloure"
-        android:layout_marginLeft="98dp"/>
+        android:text="123456"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp" />
 
 
 
@@ -199,21 +199,21 @@
             android:id="@+id/Tnetid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Network ID"
             android:layout_marginTop="8dp"
+            android:text="Network ID"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textColor="@color/Button_coloure"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/networdid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="110dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="110dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
 
 
@@ -227,21 +227,21 @@
             android:id="@+id/Tgateway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gateway"
             android:layout_marginTop="8dp"
+            android:text="Gateway"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textColor="@color/Button_coloure"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/gateway"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="130dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="130dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -251,22 +251,22 @@
             android:id="@+id/Tdhsone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DNS 1"
             android:layout_marginTop="8dp"
+            android:text="DNS 1"
             android:textAllCaps="true"
-            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
 
             android:textSize="15dp"
-        android:textColor="@color/Button_coloure"/>
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/dhsone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="160dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
 
 
@@ -279,21 +279,21 @@
             android:id="@+id/Tdhstwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DNS 2"
             android:layout_marginTop="8dp"
+            android:text="DNS 2"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:textColor="@color/Button_coloure"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/dhstwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="160dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
 
 
@@ -306,21 +306,21 @@
             android:id="@+id/Tnetmask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Net mask"
             android:layout_marginTop="8dp"
+            android:text="Net mask"
             android:textAllCaps="true"
-            android:textColor="@color/Button_coloure"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/netmask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="130dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="130dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
 
 
@@ -333,20 +333,20 @@
             android:id="@+id/Tleast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DHCP leas"
             android:layout_marginTop="8dp"
-            android:textStyle="bold"
-            android:textColor="@color/Button_coloure"
-            android:textSize="15dp"/>
+            android:text="DHCP leas"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/least"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123456"
+            android:layout_marginLeft="130dp"
             android:layout_marginTop="8dp"
-            android:textSize="15dp"
-            android:textColor="@color/text_coloure"
-            android:layout_marginLeft="130dp"/>
+            android:text="123456"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
     </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -356,20 +356,20 @@
                 android:id="@+id/Tserver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DHCP SerVER"
                 android:layout_marginTop="8dp"
-                android:textStyle="bold"
-                android:textColor="@color/Button_coloure"
-                android:textSize="15dp"/>
+                android:text="DHCP SerVER"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/server"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="123456"
+                android:layout_marginLeft="110dp"
                 android:layout_marginTop="8dp"
-                android:textSize="15dp"
-                android:textColor="@color/text_coloure"
-                android:layout_marginLeft="110dp"/>
+                android:text="123456"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
 
 
 
@@ -379,15 +379,15 @@
         android:id="@+id/wifi_two"
         android:layout_width="match_parent"
         android:layout_height="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="84dp"
+        android:background="@color/colorPrimary"
         android:elevation="20dp"
         android:text="Check Your Wifi"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@color/colorPrimary" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
